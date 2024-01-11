@@ -21,7 +21,11 @@ public class ColorController : MonoBehaviour
 
     void RandomizeColors()
     {
+<<<<<<< Updated upstream:Assets/Script_Hao/ColorController.cs
         foreach (Transform child in transform)
+=======
+        if (availableColors.Length != 0)
+>>>>>>> Stashed changes:Assets/Hao/Script_Hao/ColorController.cs
         {
             SpriteRenderer squareRenderer = child.GetComponent<SpriteRenderer>(); // Lấy reference tới SpriteRenderer của hình vuông
             if (squareRenderer != null)
