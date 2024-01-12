@@ -20,10 +20,13 @@ public class RandomObject : MonoBehaviour
     // Hàm này được gọi khi bắt đầu chạy game
     void Start()
     {
+        int randomIndex1 = Random.Range(0, objects.Length);
+        int randomIndex2 = Random.Range(0, objects.Length);
+        int randomIndex3 = Random.Range(0, objects.Length);
         // Gán object đầu tiên trong mảng cho mỗi điểm
-        currentObject1 = Instantiate(objects[0], point1.position, point1.rotation) as GameObject;
-        currentObject2 = Instantiate(objects[0], point2.position, point2.rotation) as GameObject;
-        currentObject3 = Instantiate(objects[0], point3.position, point3.rotation) as GameObject;
+        currentObject1 = Instantiate(objects[randomIndex1], point1.position, point1.rotation) as GameObject;
+        currentObject2 = Instantiate(objects[randomIndex2], point2.position, point2.rotation) as GameObject;
+        currentObject3 = Instantiate(objects[randomIndex3], point3.position, point3.rotation) as GameObject;
     }
 
     // Hàm này được gọi mỗi khung hình
